@@ -1,19 +1,9 @@
 name: "Bazel buildifier"
 description: "Run buildifier on bazel BUILD files in a code base"
-author: "Joshua Thompson"
+author: "Joshua Thompson, Andrzej Głuszak"
 branding:
   icon: "award"
   color: "purple"
-inputs:
-  filetypes:
-    description: "Comma separated list of bazel BUILD files to"
-    required: false
-  excludes:
-    description: "Exclude paths to pass to find's -path arg"
-    required: false
-  warnings:
-    description: "Set of warnings to include or exclude"
-    required: false
 runs:
   using: "docker"
   image: "Dockerfile"
